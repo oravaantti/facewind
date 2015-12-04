@@ -15,4 +15,15 @@ $(function() {
 			console.log(data.observations);
 		});
 	});
+	
+	$("#nappi").click(function() {
+		$.ajax({
+			url: "http://localhost:3000/users/new/Loffe/123456/",
+			beforeSend: function() {console.log("START");}
+		}).done(function(data){
+			console.log(data.observations);
+		});
+	});
+	
+	
 });
